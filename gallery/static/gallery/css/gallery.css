@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  html::before{
+    background-image: url(../images/Background/bg2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  
+  }
+  header {
+    display: flex;
+    height: 12rem;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    background-color: white;
+    top: 0;
+    justify-content: space-between;
+  }
+  .contact {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .links {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+  .contact .links i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: burlywood;
+  }
+  .contact .links a {
+    text-decoration: none;
+    color: burlywood;
+  }
+  .contact .links a:first-child {
+    cursor: text;
+  }
+  .logo {
+    width: 27%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo img {
+    width: 50%;
+    height: 100%;
+  }
+  .book {
+    width: 33.33%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25px;
+    
+  }
+  .book a {
+    text-decoration: none;
+    color: white;
+    background-color: burlywood;
+    font-size: 2rem;
+    padding: 1.2rem;
+    width: 12rem;
+    text-align: center;
+    transition: .2s;
+  }
+  .book a:hover{
+    opacity: 70%;
+  }
+  .navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: #574d83;
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    top: 12rem;
+  }
+  .navbar li {
+    margin-right: 10rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: .5s;
+  }
+  .navbar li:hover{
+    border-bottom: 2px solid burlywood;
+  } 
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+  }
+  .navbar li a:hover{
+    color: burlywood;
+  } 
+  .gallery {
+    width: 100%;
+    position: relative;
+    top: 14rem;
+  }
+  .gallery .gallery-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .gallery .gallery-head h1 {
+    text-align: center;
+    margin-top: 3.5rem;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+  .gallery::before{
+    position: absolute;
+    content: "";
+    background-color: white;
+    opacity: 1;
+    z-index: -1;
+    width: 94%;
+    height: 105%;
+    left: 3%;
+  }
+  .gallery .photos {
+    width: 100rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+  }
+  .gallery .photos .img {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+  
+  .gallery .photos img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+  
+  .gallery .photos img:hover {
+    transform: scale(1.2);
+    opacity: 70%;
+    cursor: pointer;
+  }
+  
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: #574d83;
+    color: white;
+    top: 29rem;
+  }
+  .footer hr {
+    width: 97%;
+    margin: auto;
+    margin-top: 185px;
+  }
+  .footer i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    background: white;
+    color: #574d83;
+    padding: 0.3rem;
+    border-radius: 1rem;
+  }
+  .footer .title {
+    position: relative;
+    text-align: center;
+    line-height: 3.5rem;
+    top: 3rem;
+  }
+  .footer .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 6.5rem;
+    width: 100%;
+  }
+  .footer a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .footer .nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    background-color: #574d83;
+    padding: 1.6rem;
+  }
+  .footer .nav li {
+    margin-right: 10rem;
+    font-size: 1.5rem;
+  }
+  .footer .nav li a {
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+  }
+  .footer .nav li a:hover{
+    opacity: 0.5;
+  }

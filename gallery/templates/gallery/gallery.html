@@ -1,0 +1,47 @@
+{% extends 'home/base.html' %} {% load static %} {% block title %} Gallary |
+Raje Shivray {% endblock title %} {% block css %}
+<link rel="stylesheet" href="{% static 'gallery/css/gallery.css' %}" />
+{% endblock css %} 
+{% block content %}
+<style>
+  html:before{
+    height:155rem;
+  }
+</style>
+<div class="gallery">
+    <div class="gallery-head">
+      <h1>All Photos</h1>
+    </div>
+  
+    <div class="photos">
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img1.jpeg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img2.jpeg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img3.jpeg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img4.jpeg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img5.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img6.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img7.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img8.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'gallery/images/gallery/img9.jpg' %}" alt="" />
+      </div>
+      
+    </div>
+  </div>
+ {% endblock content %}

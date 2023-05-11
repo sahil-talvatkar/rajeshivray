@@ -1,0 +1,155 @@
+{% extends 'home/base.html' %} {% load static %} {% block title %} Home |
+RajeShivray {% endblock title %} {% block slider %}
+<!-- Slider -->
+<div class="slides slowFade">
+  <div class="slide">
+    <img src="{% static 'home/images/image1.jpeg' %}" alt="img" />
+  </div>
+  <div class="slide">
+    <img src="{% static 'home/images/image2.jpeg' %}" alt="img" />
+  </div>
+  <div class="slide">
+    <img src="{% static 'home/images/image3.jpeg' %}" alt="img" />
+  </div>
+  <div class="slide">
+    <img src="{% static 'home/images/image4.jpeg' %}" alt="img" />
+  </div>
+</div>
+<!-- Slider End   -->
+{% endblock slider %} {% block content %}
+<!-- welcome start -->
+<div class="welcome">
+  <div class="title">
+    <h1>Welcome TO Hotel Raj Shivray, Pen</h1>
+    <h2>
+      Plot No 739, Near Mahada Colony, Mumbai - Goa Hwy, Antora Phata, Pen,
+      Maharashtra 402107
+    </h2>
+  </div>
+  <div class="contact">
+    <div class="e-mail">
+      <i class="fa-regular fa-envelope"></i>
+      <a href="http://www.gmail.com">rajeshivray@gmail.com</a>
+    </div>
+
+    <div class="phone">
+      <i class="fa-solid fa-phone"></i>
+      <a href="">+91 8329992588</a>
+    </div>
+
+    <div class="phone">
+      <i class="fa-solid fa-phone"></i>
+      <a href="">+91 8329992588</a>
+    </div>
+  </div>
+</div>
+<!-- welcome end -->
+
+<section class="content1">
+  <div class="img">
+    <img src="{% static 'home/images/image1.jpeg' %}" alt="" />
+  </div>
+  <div class="content">
+    <h1>Explore Our Hotel</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut
+      laboriosam cupiditate expedita obcaecati aperiam dolores quod voluptatibus
+      aliquam quis.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat
+      non vero eos dolor, nobis odio et. Molestiae cupiditate dolorum, maxime
+      necessitatibus culpa explicabo distinctio ipsam eos, delectus laudantium
+      fuga velit nostrum, enim exercitationem? Cum, aliquam! Tempora adipisci
+      sunt aut?
+    </p>
+  </div>
+</section>
+<section class="content2">
+  <div class="content">
+    <h1>Enjoy Our Tasty Food</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aut
+      laboriosam cupiditate expedita obcaecati aperiam dolores quod voluptatibus
+      aliquam quis.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat
+      non vero eos dolor, nobis odio et. Molestiae cupiditate dolorum, maxime
+      necessitatibus culpa explicabo distinctio ipsam eos, delectus laudantium
+      fuga velit nostrum, enim exercitationem? Cum, aliquam! Tempora adipisci
+      sunt aut?
+    </p>
+  </div>
+  <div class="img">
+    <img src="{% static 'home/images/Food/food1.jpg' %}" alt="" />
+  </div>
+</section>
+
+<div class="explore-menu">
+  <div class="heading">
+    <h1>Explore The Special Menu of Hotel Shivray</h1>
+  </div>
+
+  <div class="menu-items">
+    <div class="menu-img">
+      <img src="{% static 'home/images/Menu/Veg/img1.jpg' %}" alt="" />
+    </div>
+    <div class="menu-img">
+      <img src="{% static 'home/images/Menu/Nonveg/img1.jpg' %}" alt="" />
+    </div>
+    <div class="menu-img">
+      <img src="{% static 'home/images/Menu/Veg/img3.jpg' %}" alt="" />
+    </div>
+  </div>
+</div>
+
+<div class="dinning">
+  <div class="heading">
+    <h1>Service To Our Customers</h1>
+  </div>
+  <div class="display"></div>
+  <div class="info">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At, natus quis, a
+      quia quos ex provident doloribus non exercitationem aliquid optio, sit
+      quod expedita vel? Amet numquam repellendus maiores quisquam! Ea enim sint
+      similique?
+    </p>
+  </div>
+</div>
+
+<div class="amenities">
+  <h1>Hotel Amenities</h1>
+  <div class="list">
+    <div class="amenity">
+      <i class="fa-solid fa-power-off"></i> Power Back-up
+    </div>
+    <div class="amenity">
+      <i class="fa-solid fa-wifi"></i> Complimentary Wi-Fi
+    </div>
+    <div class="amenity">
+      <i class="fa-solid fa-handshake"></i> Multilingual Staff
+    </div>
+    <div class="amenity">
+      <i class="fa-solid fa-briefcase"></i> Luggage Assistance
+    </div>
+    <div class="amenity">
+      <i class="fa-solid fa-car"></i> Pick-up and Drop facility
+    </div>
+    <div class="amenity">
+      <i class="fa-solid fa-person"></i> Family Friendly
+    </div>
+    <div class="amenity">
+      <i class="fa-solid fa-star-of-life"></i> Daily housekeeping
+    </div>
+    <div class="amenity"><i class="fa-solid fa-tree"></i> Spacious garden</div>
+    <div class="amenity">
+      <i class="fa-solid fa-clock"></i> 24-hour room service
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

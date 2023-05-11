@@ -1,0 +1,116 @@
+{% extends 'home/base.html' %} {% block title %} Contact | Raje Shivray
+ {% endblock title %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'contact/css/contact.css' %}" />
+{% endblock css %} {% block content %}
+<style>
+  .container .comment input {
+    margin-left: 13rem;
+    height: 8rem;
+  }
+  .container .submitbtn {
+    align-items: normal;
+  }
+  .container .submitbtn button {
+    width: 100%;
+    background-color: burlywood;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .container .submitbtn button:hover {
+    opacity: 70%;
+  }
+  .mapdiv .map {
+    border: none;
+    width: 105rem;
+  }
+  .mapdiv .map iframe {
+    width: 100%;
+    height: 100%;
+  }
+  header{
+    justify-content: space-between;
+  }
+</style>
+<!-- Contact Us Form -->
+<div class="heading">
+  <h2>Contact Us</h2>
+  <hr width="150px" style="color: burlywood" />
+</div>
+<hr />
+<div class="head">
+  <h1>Contact The Hotel Raje Shivray, Pen</h1>
+</div>
+<div class="details-head">
+  <h1>Hotel Raje Shivray</h1>
+</div>
+<section class="contactus">
+  <div class="details">
+    <div class="add">
+      <label for="">Address: </label>
+      <p>
+        Plot No 739, Near Mahada Colony, Mumbai - Goa Highway, Antora Phata,
+        Pen, Maharashtra 402107
+      </p>
+    </div>
+
+    <div class="email">
+      <label for="">Email: </label>
+      <a href="">rajeshivray@gmail.com</a>
+      <br />
+      <label for="">Phone: </label>
+      <a href="" style="color: black; cursor: text">+91 8329992588</a>
+    </div>
+  </div>
+  <div class="img">
+    <img src="{% static 'contact/images/image1.jpeg' %}" alt="" />
+  </div>
+
+  <div class="booknowbtn">
+    <a href="">Book Now</a>
+  </div>
+</section>
+
+<section class="form">
+  <h1>Reach Out Of Us</h1>
+
+  <form action="" method="post" class="container">
+    {% csrf_token %}
+    <div class="name">
+      <label for="">Name</label>
+      {{form.name}}
+    </div>
+
+    <div class="email">
+      <label for="">Email</label>
+      {{form.email}}
+    </div>
+
+    <div class="phono">
+      <label for="">Phone</label>
+      {{form.phono}}
+    </div>
+
+    <div class="comment">
+      <label for="">Comment</label>
+      {{form.comment}}
+    </div>
+
+    <div class="submitbtn">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</section>
+<div class="mapdiv">
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.2576292720287!2d73.08758717464144!3d18.742025982395006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be80b50eb0a0511%3A0x84934b513ec7d69e!2sHotel%20Raje%20Shivray!5e0!3m2!1sen!2sin!4v1683350817553!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+{% endblock content %}

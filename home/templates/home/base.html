@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock title %}</title>
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}" />
+    {% endblock css %}
+  </head>
+  <style>
+    .navbar .services {
+      position: relative;
+    }
+    .navbar .sub-serv {
+      position: absolute;
+      background: #574d83;
+      top: 4rem;
+      list-style: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s all ease-in-out;
+      width: 16rem;
+    }
+    .navbar .sub-serv li {
+      width: 87%;
+    }
+    .navbar li:hover > ul {
+      opacity: 1;
+      visibility: visible;
+      top: 5rem;
+    }
+    .amenities .list {
+      margin: 0 31rem;
+      text-align: left;
+    }
+    .amenities .list .amenity i {
+      margin-right: 1rem;
+    }
+    header .head {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-style: italic;
+      letter-spacing: 2px;
+      justify-content: center;
+      flex-direction: column;
+    }
+    header .head hr {
+      width: 30rem;
+    }
+  </style>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="{% static 'home/images/logo.png' %}" alt="" />
+      </div>
+      <div class="head">
+        <h1>Hotel Raje Shivray</h1>
+        <hr />
+      </div>
+      <div class="contact">
+        <div class="links">
+          <div class="pn">
+            <i class="fa-solid fa-phone"></i>
+            <a href="">+91 8329992588 | Phone</a>
+          </div>
+          <div class="em">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="http://www.gmail.com">rajeshivray@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Navbar -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="/">Home</a></li>
+        <li><a href="{% url 'about_tab' %}">About</a></li>
+        <li>
+          <a href="" class="services">Services</a>
+          <ul class="sub-serv">
+            <li><a href="">Home Delivery</a></li>
+            <li><a href="">Table Booking</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'menu_tab' %}">Our Menu</a></li>
+        <li><a href="{% url 'gallery_tab' %}">Gallery</a></li>
+        <li><a href="{% url 'contact_tab' %}">Contact us</a></li>
+      </ul>
+    </nav>
+    <!-- Navbar End -->
+    {% block slider %}{% endblock slider %} {% block content %} 
+    {% endblock content %}
+
+    <section class="footer">
+      <div class="title">
+        <h1>Hotel Raje Shivray</h1>
+        <h2>
+          Plot No 739, Near Mahada Colony, Mumbai - Goa Hwy, Antora Phata, Pen,
+          Maharashtra 402107
+        </h2>
+      </div>
+      <div class="contact">
+        <div class="e-mail">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="http://www.gmail.com">rajeshivray@gmail.com</a>
+        </div>
+
+        <div class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <a href="">+91 8329992588</a>
+        </div>
+
+        <div class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <a href="">+91 9527173350</a>
+        </div>
+      </div>
+      <hr />
+
+      <nav>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="{% url 'about_tab' %}">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="{% url 'menu_tab' %}">Our Menu</a></li>
+          <li><a href="{% url 'gallery_tab' %}">Gallery</a></li>
+          <li><a href="{% url 'contact_tab' %}">Contact us</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/c5f72b7e62.js"
+      crossorigin="anonymous"
+    ></script>
+
+    {% block js %}{% endblock js %}
+  </body>
+</html>

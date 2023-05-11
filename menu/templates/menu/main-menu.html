@@ -1,0 +1,178 @@
+{% extends 'home/base.html' %} {% load static %} {% block title %} Menu | Raje
+Shivray {% endblock title %} {% block css %}
+<link rel="stylesheet" href="{% static 'menu/css/main-menu.css' %}" />
+{% endblock css %} {% block content %}
+<!-- Manu Start -->
+<div class="navigation">
+  <ul class="nav">
+    <li><a id="categories">Categories</a></li>
+    <li><a id="veg">Veg</a></li>
+    <li><a id="nonveg">Non-Veg</a></li>
+    <li><a id="cold">Cold</a></li>
+  </ul>
+</div>
+<hr />
+<!-- MenuBox -->
+<div class="menu-box" id="menu-box">
+  <div class="heading">
+    <h1 id="header">Categories</h1>
+  </div>
+  <!-- Categories -->
+  <div class="cate" id="cate">
+    <div class="veg">
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/Veg/img1.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/Veg/img2.jpeg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/Veg/img3.jpg' %}" alt="" />
+      </div>
+    </div>
+    <div class="non-veg">
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/Nonveg/img1.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/Nonveg/img2.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/Nonveg/img3.jpg' %}" alt="" />
+      </div>
+    </div>
+    <div class="cold">
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/colddrinks/img1.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/colddrinks/img2.jpg' %}" alt="" />
+      </div>
+      <div class="img">
+        <img src="{% static 'menu/images/Menu/colddrinks/img3.jpg' %}" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- Categories End -->
+
+  <!-- Veg-Menu -->
+  <div class="veg-photos" id="veg-photos">
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img1.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img2.jpeg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img3.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img4.jpeg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img5.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img6.JPG' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img7.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img8.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img9.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Veg/img10.jpg' %}" alt="" />
+    </div>
+  </div>
+  <!-- Veg-Menu End -->
+
+  <!-- Non-Veg-Menu -->
+  <div class="non-veg-photos" id="non-veg-photos">
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img1.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img2.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img3.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img4.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img5.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img6.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img7.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img8.png' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img9.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img10.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img11.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/Nonveg/img12.png' %}" alt="" />
+    </div>
+  </div>
+  <!-- Non-Veg-Menu colddrinks -->
+
+  <!-- Cold-Menu -->
+  <div class="cold-drinks-photos" id="cold-drinks-photos">
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img1.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img2.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img3.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img4.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img5.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img6.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img7.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img8.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img9.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img10.jpg' %}" alt="" />
+    </div>
+    <div class="img">
+      <img src="{% static 'menu/images/Menu/colddrinks/img11.jpg' %}" alt="" />
+    </div>
+  </div>
+  <!-- Cold-Menu End -->
+</div>
+<!-- MenuBox End -->
+
+<!-- Manu End -->
+
+{% endblock content %} {% block js %}
+<script src="{% static 'menu/js/main-menu.js' %}"></script>
+{% endblock js %}
